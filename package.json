@@ -1,9 +1,8 @@
 {
   "name": "frontend",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jmatheuzz.github.io/portfolio/",
+  "homepage": ".",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
