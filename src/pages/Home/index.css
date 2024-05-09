@@ -1,0 +1,103 @@
+:root {
+  --tamanho-cubo: 15vw;
+  --tamanho-cubo-mobile: 50vw;
+}
+
+.container-cubo {
+  display: flex;
+  justify-content: flex-end;
+  transform-style: preserve-3d;
+}
+
+.cube {
+  width: var(--tamanho-cubo);
+  height: var(--tamanho-cubo);
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 25s infinite linear;
+}
+
+.side {
+  position: absolute;
+  width: var(--tamanho-cubo);
+  height: var(--tamanho-cubo);
+  border: 2px solid #BB9A6C;
+}
+
+.front {
+  transform: translateZ(calc(var(--tamanho-cubo) / 2));
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(calc(var(--tamanho-cubo) / 2));
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(calc(var(--tamanho-cubo) / 2));
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(calc(var(--tamanho-cubo) / 2));
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(calc(var(--tamanho-cubo) / 2));
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(calc(var(--tamanho-cubo) / 2));
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .container-cubo {
+    margin-top: 5rem;
+  }
+  .cube {
+    width: var(--tamanho-cubo-mobile);
+    height: var(--tamanho-cubo-mobile);
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 25s infinite linear;
+  }
+  
+  .side {
+    position: absolute;
+    width: var(--tamanho-cubo-mobile);
+    height: var(--tamanho-cubo-mobile);
+    border: 2px solid rgb(255, 228, 77);
+  }
+  
+  .front {
+    transform: translateZ(calc(var(--tamanho-cubo-mobile) / 2));
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(calc(var(--tamanho-cubo-mobile) / 2));
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(calc(var(--tamanho-cubo-mobile) / 2));
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(calc(var(--tamanho-cubo-mobile) / 2));
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(calc(var(--tamanho-cubo-mobile) / 2));
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(calc(var(--tamanho-cubo-mobile) / 2));
+  }
+}
