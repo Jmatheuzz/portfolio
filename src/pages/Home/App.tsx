@@ -1,12 +1,11 @@
 import { CSSProperties, useEffect, useState } from "react"
-import { darkTheme, getThemeSaved, lightTheme } from "../../services/theme"
+import { darkTheme, getThemeSaved } from "../../services/theme"
 import { ThemeType } from "../../types/theme-type"
 import { MenuHamburger } from "../../components/general/MenuHamburger/MenuHamburger"
 import './index.css'
-import { HiOutlineTerminal, HiTerminal } from "react-icons/hi"
+import { HiOutlineTerminal } from "react-icons/hi"
 import { SlScreenDesktop } from "react-icons/sl"
-import { IoInfinite } from "react-icons/io5"
-import { MdMore, MdOutlineMore } from "react-icons/md"
+import { MdOutlineMore } from "react-icons/md"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { BiShow } from "react-icons/bi"
 
