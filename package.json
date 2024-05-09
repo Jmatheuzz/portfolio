@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Jmatheuzz.github.io/portfolio/",
+  "homepage": "https://jmatheuzz.github.io/portfolio/",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
