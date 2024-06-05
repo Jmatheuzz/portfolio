@@ -23,7 +23,7 @@ function App() {
   return (
     <div style={{...styles.container, backgroundColor: theme.primary, color: theme.textPrimary}}>
       <MenuHamburger/>
-      <div style={{...styles.around, ...styles.paddingTop, position: 'relative'}}>
+      <div className="header" style={{...styles.around, position: 'relative'}}>
         <h1 style={{
           fontFamily: '"Jersey 25", sans-serif',
           fontSize: '2.5rem',
