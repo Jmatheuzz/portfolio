@@ -52,7 +52,9 @@ body {
 .menu ul li a:hover {
   color: #666;
 }
-
+.logo {
+  width: 5rem;
+}
 @media (max-width: 768px) {
   .container-menu {
     justify-content: flex-end;

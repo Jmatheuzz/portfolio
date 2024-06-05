@@ -12,8 +12,8 @@ export function MenuHamburger () {
   };
   return (
     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft: '2rem'}}>
-        <img src="./src/assets/img/logo.png" alt="" style={{width: '5vw'}}/>
+      <div style={{marginLeft: '0.5rem'}}>
+        <img src="./src/assets/img/logo.png" alt="" className="logo"/>
       </div>
       <div className="container-menu">
         <button className="hamburger" onClick={toggleMenu}>

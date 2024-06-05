@@ -51,14 +51,14 @@ function App() {
           <h1 style={{
             fontSize: '2rem',
             textAlign: 'center'}}>Um pouco sobre mim</h1>
-          <p style={{padding: '25vw', paddingBottom: 0, paddingTop: 0, textAlign: 'center', marginTop: '3rem', fontSize: '1.2rem', fontWeight: 500}}>
+          <p className="about-me">
             Sou do Brasil e atuo à mais de 2 anos como programador full stack. No centro de tudo, está minha paixão pela tecnologia. Para mim, ser programador é mais do que escrever códigos e completar tarefas; é garantir qualidade e segurança para os usuários. Cada linha de código é uma chance de criar experiências digitais confiáveis e valiosas. Estou comprometido em construir um futuro digital onde excelência e segurança sejam prioridades em todas as interações.
           </p>
         </div>
       </div>
-      <div style={{height: '80vh', width: '80%', backgroundColor:theme.primary, borderRadius: '2rem', margin: '0 auto', marginTop: '-10vh', boxShadow: `0 4px 4px 0 ${theme.three}55, 0 0 0 1px ${theme.three}55`, display: 'flex', justifyContent: 'space-between'}}>
-        <div style={{display: 'flex', flexDirection:'column', alignItems: 'center', borderRight: `1px solid ${theme.three}55`, width: '33%'}}>
-          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '2vh'}}>
+      <div className="skils">
+        <div className="skil">
+          <div className="container-skil">
             <HiOutlineTerminal size={50} color="#FFF" />
             <h2 style={{fontWeight: 500}}>Backend</h2>
 
@@ -77,7 +77,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{display: 'flex', flexDirection:'column', alignItems: 'center', borderRight: `1px solid ${theme.three}55`, width: '33%'}}>
+        <div className="skil">
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '2vh'}}>
             <SlScreenDesktop  size={50} color="#FFF" />
             <h2 style={{fontWeight: 500}}>Frontend</h2>
@@ -96,7 +96,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{display: 'flex', flexDirection:'column', alignItems: 'center', width: '33%'}}>
+        <div className="skil">
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '2vh'}}>
             <MdOutlineMore size={50} color="#FFF" />
             <h2 style={{fontWeight: 500}}>Geral</h2>
@@ -116,7 +116,7 @@ function App() {
 
 
 
-      <div style={{marginTop: '30vh', paddingBottom: '5vh'}}>
+      <div className="projects">
         <h1 style={{
               fontSize: '2rem',
               textAlign: 'center'}}>
