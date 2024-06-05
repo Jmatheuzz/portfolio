@@ -2,6 +2,7 @@ import { useState } from "react";
 import './index.css'
 import { AiOutlineClose } from "react-icons/ai";
 import { CiMenuFries } from "react-icons/ci";
+import Logo from '../../../assets/img/logo.png'
 
 export function MenuHamburger () {
 
@@ -13,7 +14,7 @@ export function MenuHamburger () {
   return (
     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
       <div style={{marginLeft: '0.5rem'}}>
-        <img src="./src/assets/img/logo.png" alt="" className="logo"/>
+        <img src={Logo} alt="" className="logo"/>
       </div>
       <div className="container-menu">
         <button className="hamburger" onClick={toggleMenu}>
