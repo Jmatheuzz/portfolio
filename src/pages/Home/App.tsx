@@ -21,7 +21,7 @@ function App() {
   }, [])
   
   return (
-    <div style={{...styles.container, backgroundColor: theme.primary, color: theme.textPrimary}}>
+    <div style={{...styles.container, backgroundColor: theme.primary, color: theme.textPrimary, position: 'relative'}}>
       <MenuHamburger/>
       <div className="header" style={{...styles.around, position: 'relative'}}>
         <h1 style={{
@@ -46,7 +46,7 @@ function App() {
           </div>
       </div>
 
-      <div style={{marginTop: '35%', height: '60vh', backgroundColor: '#BB9A6C', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <div className="about-me" style={{marginTop: '35%', height: '60vh', backgroundColor: '#BB9A6C', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: '50%', marginTop:'3rem'}}>
           <h1 style={{
             fontSize: '2rem',
