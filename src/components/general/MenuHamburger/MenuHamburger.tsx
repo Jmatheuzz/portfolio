@@ -60,15 +60,15 @@ export function MenuHamburger () {
             
             menuOpen && (
                 <div className="close">
-                  <AiOutlineClose size={30} onClick={toggleMenu}/>
+                  <AiOutlineClose size={40} onClick={toggleMenu}/>
                 </div>
               )
 
           }
           <ul>
-            <li><span onClick={navigateToInicio}>Inicio</span></li>
-            <li><span onClick={navigateToAboutMe}>Sobre mim</span></li>
-            <li><span onClick={navigateToProjects}>Projetos</span></li>
+            <li style={{userSelect: 'none'}}><span onClick={navigateToInicio}>Inicio</span></li>
+            <li style={{userSelect: 'none'}}><span onClick={navigateToAboutMe}>Sobre mim</span></li>
+            <li style={{userSelect: 'none'}}><span onClick={navigateToProjects}>Projetos</span></li>
           </ul>
         </nav>
       </div>

@@ -47,11 +47,12 @@ function App() {
       </div>
 
       <div className="about-me" style={{marginTop: '35%', height: '60vh', backgroundColor: '#BB9A6C', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: '50%', marginTop:'3rem'}}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-around', height: '50%', marginTop:'1.5rem'}}>
           <h1 style={{
             fontSize: '2rem',
-            textAlign: 'center'}}>Um pouco sobre mim</h1>
-          <p className="about-me">
+            textAlign: 'center'}}>Um pouco sobre mim
+          </h1>
+          <p style={{marginTop:'1rem'}}>
             Sou do Brasil e atuo à mais de 2 anos como programador full stack. No centro de tudo, está minha paixão pela tecnologia. Para mim, ser programador é mais do que escrever códigos e completar tarefas; é garantir qualidade e segurança para os usuários. Cada linha de código é uma chance de criar experiências digitais confiáveis e valiosas. Estou comprometido em construir um futuro digital onde excelência e segurança sejam prioridades em todas as interações.
           </p>
         </div>
@@ -127,11 +128,11 @@ function App() {
             <h3 style={{fontWeight: 700}}>Meu portfólio</h3>
             <p style={{textAlign: 'center', fontWeight: 500}}>Toda a construção do meu portfólio e automação do conteúdo</p>
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.4rem', width: '100%'}}>
-              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.4rem', padding: '0.6rem 1rem 0.6rem 1rem', width: '30%', textAlign: 'center', borderRadius: '0.5rem', backgroundColor: '#FFF', color: `${theme.three}`}}>
+              <div className="visitar" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.4rem', padding: '0.6rem 1rem 0.6rem 1rem', textAlign: 'center', borderRadius: '0.5rem', backgroundColor: '#FFF', color: `${theme.three}`}}>
                 <p style={{fontWeight: 600, fontSize: '0.9rem'}}>Visitar site</p>
                 <FaArrowRightLong />
               </div>
-              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.4rem', padding: '0.6rem 1rem 0.6rem 1rem', width: '30%', textAlign: 'center', borderRadius: '0.5rem', backgroundColor: '#FFF', color: `${theme.three}`}}>
+              <div className="preview" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.4rem', padding: '0.6rem 1rem 0.6rem 1rem', textAlign: 'center', borderRadius: '0.5rem', backgroundColor: '#FFF', color: `${theme.three}`}}>
                 <p style={{fontWeight: 600, fontSize: '0.9rem'}}>Preview</p>
                 <BiShow size={22}/>
               </div>
